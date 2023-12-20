@@ -87,4 +87,10 @@ public class ProduitMetierImpl    implements ProduitMetierInterface{
         }
         return cout;
     }
+
+	@Override
+	public List<Categorie> listeCategories() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

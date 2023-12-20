@@ -6,6 +6,7 @@ import org.springframework.context.ApplicationContext;
 import soa.entities.Categorie;
 import soa.entities.Produit;
 import soa.entities.Stock;
+import soa.metier.CategorieMetierInterface;
 import soa.metier.ProduitMetierInterface;
 
 import java.text.ParseException;
@@ -17,6 +18,7 @@ public class SpringJpaApplication2 {
     //déclaration des objets de type Repository
     //Déclaration d'un objet métier pour gérer les produits
     static ProduitMetierInterface produitMetier;
+    static CategorieMetierInterface categorieMetier;
 
     public static void main(String[] args) {
         System.out.println("---------Injection de dépendances----------");
@@ -112,4 +114,6 @@ public class SpringJpaApplication2 {
         }
         System.out.println("********************Fin************************");
     }
+    
+    
 }
